@@ -1,3 +1,9 @@
+void __fastcall ntoskrnnl::KiBugCheckDebugBreak(unsigned int a1)
+{
+  DbgBreakPointWithStatus(a1);
+  JUMPOUT(0x140562B97i64);
+}
+
 __int64 __fastcall ntoskrnl::KeBugCheck2(unsigned int a1, __int64 a2, unsigned __int64 a3, __int64 a4, unsigned __int64 a5, __int64 a6)
 {
   unsigned __int8 CurrentIrql; // cl
