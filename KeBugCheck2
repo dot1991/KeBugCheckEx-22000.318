@@ -1,10 +1,4 @@
-__int64 __fastcall KeBugCheck2(
-        unsigned int a1,
-        __int64 a2,
-        unsigned __int64 a3,
-        __int64 a4,
-        unsigned __int64 a5,
-        __int64 a6)
+__int64 __fastcall ntoskrnl::KeBugCheck2(unsigned int a1, __int64 a2, unsigned __int64 a3, __int64 a4, unsigned __int64 a5, __int64 a6)
 {
   unsigned __int8 CurrentIrql; // cl
   _DWORD *SchedulerAssist; // r9
