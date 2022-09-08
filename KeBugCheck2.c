@@ -1,4 +1,4 @@
-void __fastcall ntoskrnnl::KiBugCheckDebugBreak(unsigned int a1)
+void __fastcall ntoskrnl::KiBugCheckDebugBreak(unsigned int a1)
 {
   DbgBreakPointWithStatus(a1);
   JUMPOUT(0x140562B97i64);
